@@ -285,9 +285,8 @@ aside form h3 {
 .bodysocios{
 	display: grid;
 	min-height: 100vh;
-	padding: 2rem;
 	grid-template-columns: 1fr;
-	grid-template-rows: 10% 80% 10%	;
+	grid-template-rows: 1fr 4fr 1fr;
 	grid-template-areas: 
 	"nav"
 	"form__socios"
@@ -401,8 +400,7 @@ aside form h3 {
 		font-size: 1.5rem;
 	}
 
-
-	}
+	
 	section div h2, section div h3 {
 		flex-direction: column;
 		align-content: center;
