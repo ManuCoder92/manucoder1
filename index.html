@@ -48,13 +48,13 @@
             </nav>	
           </header>
         </div>
-        <main class="row">
-          <div>
+        <!-- <main class="row">
+          <div class="col-10">
             <section class="sectionone">
-              <div class="col-5"> 
+              <div > 
                 <img src="./multimedia/limpieza.jpg">
               </div>
-                <div class="textyform">
+                <div class="textyform" class="col-7">
                 <div class="text">
                   <h2 class="article__h2">Necesitas una mano?</h2>
                   <h3 class="article__h3">Te Damos una <span>Mano</span></h3> 	 
@@ -95,8 +95,157 @@
           </main>
         
           
-          </div>
+          </div> -->
          
+
+<main>
+  <div class="row">
+    <section class="col-12 col-lg-8">
+      <article >
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="../clase2/multimedia/babysitter.jpg" class="d-block w-100" alt="babysitter">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./multimedia/limpieza.jpg" class="d-block w-100" alt="limpieza">
+            </div>
+            <div class="carousel-item">
+              <img src="./multimedia/gasista.jpg" class="d-block w-100" alt="gasista">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </article>
+      <aside>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="card" style="width: 18rem;">
+                <img src="./multimedia/Customer1.jpg" class="card-img-top" alt="usuario1">
+                <div class="card-body">
+                  <h5 class="card-title">Marcos Aguero</h5>
+                  <p class="card-text">Contraté el servicio porque necesitaba cuidar a mi abuela mientras estuvo interneda. Por suerte se recuperó rápido y Carla, la chica que la acompañó, fue super amable en todos los cuidados</p>
+                  
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./multimedia/limpieza.jpg" class="d-block w-100" alt="limpieza">
+            </div>
+            <div class="carousel-item">
+              <img src="./multimedia/gasista.jpg" class="d-block w-100" alt="gasista">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="row">
+          <article class="col-4">
+            <h3 class="display-4">Nuestros clientes cuentan sus experiencias</h3>
+            <div class="card" style="width: 18rem;">
+              <img src="./multimedia/Customer1.jpg" class="card-img-top" alt="usuario1">
+              <div class="card-body">
+                <h5 class="card-title">Marcos Aguero</h5>
+                <p class="card-text">Contraté el servicio porque necesitaba cuidar a mi abuela mientras estuvo interneda. Por suerte se recuperó rápido y Carla, la chica que la acompañó, fue super amable en todos los cuidados</p>
+                
+            </div>
+          </article>
+          <article class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./multimedia/socia1.jpg" class="card-img-top" alt="usuariodos">
+              <div class="card-body">
+                <h5 class="card-title">Romina Ortega</h5>
+                <p class="card-text">Necesitaba contratar un servicio de plomera pero no tenía a nadie de confianza. Comparé precio y vi las calificaciones de diferentes socios. El servicio fue impecable, lo recomiendo. </p>
+                
+              </div>
+            </div>
+          </article>
+          <article class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./multimedia/customer3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Matias Gomez</h5>
+                <p class="card-text">Me mudé sólo hace poco y la limpieza de casa era un desastre. Una Mano me ayudó a ordenarme, contrato personal en blanco y con experiencia, lo que me da mucha seguridad.</p>
+                
+              </div>
+            </div>
+          </article>
+        </aside>
+        </div>
+        
+      <!-- <aside class="col-5">
+
+        <div class="textyform">
+          <div class="text">
+            <h2 class="article__h2">Necesitas una mano?</h2>
+            <h3 class="article__h3">Te Damos una <span>Mano</span></h3> 	 
+          </div>
+          <form class="row g-3">
+        <div class="col-md-6">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccione el servicio</option>
+            <option value="1">Limpieza</option>
+            <option value="2">Babysitter</option>
+            <option value="3">Plomeria</option>
+            <option value="4">Cuidado de adultos mayores</option>
+            <option value="5">Gasista</option>
+            <option value="6">Paseador de perros</option>
+          </select>
+          <label for="inputEmail4" class="form-label">Elegir Fecha</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Elegir Horario</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label"> Dirección </label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Telefono de Contacto</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+      
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+   
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Cotizar</button>
+        </div>
+      </form>
+        </div>
+        </section>
+
+      </aside>
+    </section>
+  </div>
+  
+</main>
+
+ -->
+
+
+
           <footer>
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
           <div class="container-fluid">
