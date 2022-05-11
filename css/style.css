@@ -549,3 +549,10 @@ aside form h3 {
 }
 
 
+.imagen__customer{
+	image-resolution: c ;
+}
+
+.logo__img {
+	height: 5rem;
+}
