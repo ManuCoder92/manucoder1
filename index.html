@@ -26,52 +26,63 @@
   <body>
     <div>
       <header>
-        <div>
-          <nav class="navbar navbar-expand-lg navbar-light bg-navmanos">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img class="logo__img"
-                  src="multimedia/logoremovido.png"></a>
-              <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item p-5">
-                    <i class="bi bi-emoji-smile"></i><a class="nav-link active
-                      d-inline fs-5 " aria-current="page"
-                      href="./paginas/socios.html">Ser Socio</a>
-                  </li>
-                  <li class="nav-item p-5">
-                    <i class="bi bi-person-circle"></i><a class="nav-link active
-                      d-inline fs-5 " aria-current="page"
-                      href="./paginas/iniciarsesion.html">Iniciar Sesion</a>
-                  </li>
-                  <li class="nav-item p-5">
-                    <i class="bi bi-calendar-date-fill"></i><a class="nav-link
-                      active d-inline fs-5" href="./paginas/reservar.html">Reservar</a>
-                  </li>
-                  <li class="nav-item p-5">
-                    <i class="bi bi-tools"></i><a class="nav-link d-inline fs-5 "
-                      href="./paginas/oficios.html">Oficios</a>
-                  </li>
-                  <li class="nav-item p-5">
-                    <i class="bi bi-question-circle-fill"></i><a class="nav-link
-                      d-inline fs-5" href="./paginas/preguntas.html">Preguntas
-                      Frecuentes</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-navmanos col-12">
+					<div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="logo__img" src="./multimedia/logo56px.png"></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item p-5">
+									<i class="bi bi-question-circle-fill">
+										<a class="nav-link d-inline textnav" href="./paginas/preguntas.html">Preguntas Frecuentes</a></i>
+								</li>
+								<li class="nav-item p-5">
+									<i class="bi bi-person-circle"><a class="nav-link active d-inline textnav"
+											href="./paginas/iniciarsesion.html">Iniciar Sesion</a>
+									</li></i>
+								<li class="nav-item p-5">
+									<i class="bi bi-calendar-date-fill"></i><a class="nav-link active
+										d-inline textnav" href="./paginas/reservar.html">Reservar</a>
+								</li>
+								<li class="nav-item p-5">
+									<i class="bi bi-tools"></i> <a class="nav-link d-inline textnav"
+										href="./paginas/oficios.html">Oficios</a>
+								</li>
+								<li class="nav-item p-5">
+									<i class="bi bi-emoji-smile"></i><a class="nav-link d-inline textnav"
+										href="./paginas/socios.html">Ser Socio</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </header>
     </div>
 
-    <main class="row m-auto d-flex justify-content-center">
+    <main class="row m-auto d-flex justify-content-center mt-5">
       <div class="col-10 position-relative">
         <section>
           <article>
@@ -79,15 +90,15 @@
               data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="./multimedia/carrusel1.png" class="d-block w-100"
+                  <img src="./multimedia/sliderm1.jpg" class="d-block w-100 imagen__carrusel"
                     alt="babysitter">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                  <img src="./multimedia/carrusel2.png" class="d-block w-100"
+                  <img src="./multimedia/sliderh2.jpg" class="d-block w-100 imagen__carrusel"
                     alt="limpieza">
                 </div>
                 <div class="carousel-item">
-                  <img src="./multimedia/carrusel3.png" class="d-block w-100"
+                  <img src="./multimedia/sliderm3.jpg" class="d-block w-100 imagen__carrusel"
                     alt="gasista">
                 </div>
               </div>
@@ -104,21 +115,38 @@
             </div>
           </article>
         </section>
-        <h5 class="display-4 my-5"> Nuestros clientes nos <span
-            class="transiciontext">recomiendan</span></h5>
+        <!-- <h5 class="display-4 my-5"> Nuestros clientes nos <span
+            class="transiciontext">recomiendan</span></h5> -->
+
+
+            <h1 class="h1spanindex">
+              <span class="spanindex"   style="--start-color:#007CF0; --end-color:#00DFD8; --content: 'Nuestros';">
+                Nuestros
+              </span>
+              <span class="spanindex"   style="--start-color:#7928CA; --end-color:#FF0080; --content: 'Clientes'; --animation:a2;">
+                Clientes
+              </span>
+              <span class="spanindex"   style="--start-color:#FF4D4D; animation-name:a3; --end-color:#F9CB28; --content: 'Recomiendan'; --animation: a3">
+                Recomiendan
+              </span>
+            </h1>
+
+
+
+
         <article>
           <div class="row my-5">
             <div class="col-lg-4 col-md-12">
               <article>
                 <div class="card d-block">
-                  <img src="./multimedia/tarjetausuario1.png"
+                  <img src="./multimedia/pruebah1.jpg"
                     class="card-img-top position-relative"
                     class="imagen__customer" alt="usuariohombrerubio">
                   <div class="card-body">
                     <h5 class="card-title">Marcos Aguero</h5>
                     <p class="card-text">Contraté el servicio porque necesitaba
                       cuidar a mi abuela mientras estuvo interneda. Por suerte
-                      se recuperó rápido y Carla, la chica que la acompañó, fue
+                      se recuperó rápido la chica que la acompañó, fue
                       super amable en todos los cuidados</p>
                   </div>
                 </div>
@@ -127,7 +155,7 @@
             <div class="col-lg-4 col-md-12">
               <article>
                 <div class="card d-block">
-                  <img src="./multimedia/tarjetacustomer2.png"
+                  <img src="./multimedia/pruebam1.jpg"
                     class="card-img-top" class="imagen__customer"
                     alt="usuariomujer">
                   <div class="card-body">
@@ -143,7 +171,7 @@
             <div class="col-lg-4 col-md-12">
               <article>
                 <div class="card">
-                  <img src="./multimedia/tarjetacustomer3.png"
+                  <img src="./multimedia/pruebah4.png"
                     class="card-img-top" class="imagen__customer"
                     alt="usuariohombrenegro">
                   <div class="card-body">
@@ -157,13 +185,17 @@
               </article>
             </div>
           </div>
-          <h3 class="display-4 my-5">Nuestros socios cuentan su experiencia</h3>
+        
+         
+          <h1 class="sociosh1">
+            El trabajo con más libertad del mercado
+          </h1>
           <div class="row">
 
             <div class="col-lg-4 col-md-12">
               <article>
                 <div class="card">
-                  <img src="./multimedia/tarjetasocia1.png" class="card-img-top"
+                  <img src="./multimedia/pruebam2.jpg" class="card-img-top"
                     class="imagen__customer" alt="socialimpieza">
                   <div class="card-body">
                     <h5 class="card-title">Liliana Ramirez</h5>
@@ -179,16 +211,13 @@
               <div class="col-lg-4 col-md-12">
                 <article>
                   <div class="card">
-                    <img src="./multimedia/tarjetasocio2.png"
+                    <img src="./multimedia/pruebah5.jpg"
                       class="card-img-top" class="imagen__customer"
                       alt="sociogasista">
                     <div class="card-body">
                       <h5 class="card-title">Guillermo Varela</h5>
-                      <p class="card-text">Desde que activé la app no paran de
-                        caerme pedidos. Siempre trabajo de una forma seria y
-                        profesional, y eso se ve reflejado en mi reputación como
-                        socio. Me da una gran satisfacción ver que los clientes
-                        hablen bien de mi trabajo. </p>
+                      <p class="card-text"> La aplicación me ayudó a darle mucha difusión a mi trabajo.
+                      Cada vez que un cliente me califica positivamente siento una gratificación enorme y me sirve porque el próximo usuario verá como es mi desempeño</p>
 
                     </div>
                   </div>
@@ -198,18 +227,12 @@
               <div class="col-lg-4 col-md-12">
                 <article>
                   <div class="card">
-                    <img src="./multimedia/tarjetasocia3.png"
+                    <img src="./multimedia/pruebam3.jpg"
                       class="card-img-top" class="imagen__customer"
                       alt="sociatres">
                     <div class="card-body">
                       <h5 class="card-title">Belen Perez</h5>
-                      <p class="card-text">Estaba sin trabajo y esto cambió mi
-                        vida. Elijo el precio de mi trabajo, cuantas horas le
-                        dedico, en que horario y en que barrios. A la hora de
-                        entrar a una casa a limpiar, me da mucha seguridad saber
-                        que los usuarios han dejado todos sus datos registrados,
-                        porque no dejamos de meternos en casa de personas que no
-                        conocemos.</p>
+                      <p class="card-text"> Estaba sin trabajo y  desesperada. No me animaba a trabajar en casas de desconocidos por miedo pero con la app se que estoy segura. Todos los días me surgen ofertas nuevas y acomodé mi situación.</p>
 
                     </div>
 

@@ -37,23 +37,23 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 								<li class="nav-item p-5">
-									<i class="bi bi-house-door-fill"></i><a class="nav-link d-inline"
+									<i class="bi bi-house-door-fill"></i><a class="nav-link d-inline textnav"
 										href="../index.html">Home</a>
 								</li>
 								<li class="nav-item p-5">
-									<i class="bi bi-person-circle"></i><a class="nav-link active d-inline"
+									<i class="bi bi-person-circle"></i><a class="nav-link active d-inline textnav"
 										href="iniciarsesion.html">Iniciar Sesion</a>
 								</li>
 								<li class="nav-item p-5">
-									<i class="bi bi-emoji-smile"></i><a class="nav-link active d-inline"
+									<i class="bi bi-emoji-smile"></i><a class="nav-link active d-inline textnav"
 										href="socios.html">Ser Socios</a>
 								</li>
 								<li class="nav-item p-5">
-									<i class="bi bi-tools"></i><a class="nav-link d-inline"
+									<i class="bi bi-tools"></i><a class="nav-link d-inline textnav"
 										href="oficios.html">Oficios</a>
 								</li>
 								<li class="nav-item p-5">
-									<i class="bi bi-question-circle-fill"></i><a class="nav-link d-inline"
+									<i class="bi bi-question-circle-fill"></i><a class="nav-link d-inline textnav"
 										href="preguntas.html">Preguntas Frecuentes</a>
 								</li>
 							</ul>
@@ -62,10 +62,60 @@
 					</div>
 				</nav>
 			</header>
-			<main class="m-5">
+			<main class="m-5 mainreservar">
+				<div id="carouselExampleIndicators" class="carousel slide"
+					data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide
+							1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="../multimedia/adultosmayores3.jpg" class="d-block w-100"
+								alt="anciana feliz">
+						</div>
+						<div class="carousel-item">
+							<img src="../multimedia/limpieza2.jpg" class="d-block w-100"
+								alt="limpiando ropa">
+						</div>
+						<div class="carousel-item">
+							<img src="../multimedia/pintora.jpg" class="d-block w-100" alt="mujer
+								pintora">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button"
+						data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button"
+						data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+
+
+
+
+
+
+
 				<article>
-					<h3 class="display-4">Primer Paso: Seleccione el oficio</h3>
-					<select class="form-select" aria-label="Default select example">
+
+
+					<div class="primerpaso">
+						<h2 data-text="Oficios" class="primerpaso__titulo">Oficios</h2>
+
+					</div>
+
+					<select class="form-select mt-5" aria-label="Default select example">
 
 						<option selected>Seleccione el servicio</option>
 						<option value="1">Limpieza</option>
@@ -77,8 +127,13 @@
 					</select>
 				</article>
 				<article>
-					<h3 class="display-4">Segundo Paso: Confirme los datos</h3>
-					<form class="row g-3 needs-validation m-5" novalidate>
+					<div class="segundopaso">
+						<h2 data-text="Información" class="segundopaso__titulo">Información</h2>
+					</div>
+				</article>
+
+
+					<form class="row g-3 needs-validation m-5 reservarform1" novalidate>
 						<div class="col-md-4">
 							<label for="validationCustom01" class="form-label">Calle y altura</label>
 							<input type="text" class="form-control" id="validationCustom01" required>
@@ -147,7 +202,7 @@
 							</div>
 						</div>
 						<div class="col-12">
-							<button class="btn btn-primary bg-btpropio" type="submit">Reservar</button>
+							<button class="btn btn-primary bg-btpropio mb-3" type="submit">Reservar</button>
 						</div>
 					</form>
 				</article>

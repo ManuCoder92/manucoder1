@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
-<body>
+<body class="bodyis">
 	<div class="container">
 		<header>
             <nav class="navbar navbar-expand-lg navbar-light bg-navmanos col-12">
@@ -24,19 +24,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item p-5">
-						<i class="bi bi-house-door-fill"></i><a class="nav-link d-inline" href="../index.html">Home</a>
+						<i class="bi bi-house-door-fill"></i><a class="nav-link d-inline textnav" href="../index.html">Home</a>
 					  </li>
 					  <li class="nav-item p-5">
-						<i class="bi bi-calendar-date-fill"></i><a class="nav-link active d-inline" href="./reservar.html">Reservar</a>
+						<i class="bi bi-calendar-date-fill"></i><a class="nav-link active d-inline textnav" href="./reservar.html">Reservar</a>
 					  </li>
                     <li class="nav-item p-5">
-						<i class="bi bi-tools"></i><a class="nav-link d-inline" href="./oficios.html">Oficios</a>
+						<i class="bi bi-tools"></i><a class="nav-link d-inline textnav" href="./oficios.html">Oficios</a>
 					</li>
 					<li class="nav-item p-5">
-						<i class="bi bi-emoji-smile"></i><a class="nav-link active d-inline" href="./socios.html">Ser Socios</a>
+						<i class="bi bi-emoji-smile"></i><a class="nav-link active d-inline textnav" href="./socios.html">Ser Socios</a>
                     </li>  
                     <li class="nav-item p-5">
-						<i class="bi bi-question-circle-fill"></i><a class="nav-link d-inline" href="./preguntas.html">Preguntas Frecuentes</a>
+						<i class="bi bi-question-circle-fill"></i><a class="nav-link d-inline textnav" href="./preguntas.html">Preguntas Frecuentes</a>
                     </li>
                   </ul>
                 </div>
@@ -45,30 +45,44 @@
           </header>
 
 	<main class="mt-3">
-		<section>
-			<div id="carouselExampleSlidesOnly" class="carousel slide d-flex justify-content-center align-content-center my-4" data-bs-ride="carousel">
-				<div class="carousel-inner">
-				  <div class="carousel-item active">
-					<img src="../multimedia/usuario.jpg" class="d-block" alt="usuario sesion">
-				  </div>
-				</div>
-			</div>
-		</section> 
-		<article>
-				<div class="form-floating mb-3 my-5">
-					<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-					<label for="floatingInput">Email address</label>
-				  </div>
-				  <div class="form-floating">
-					<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-					<label for="floatingPassword">Password</label>
-					</div>
-				  
-				<button type="button" class="btn btn-secondary bg-btpropio btn-sm m-3">Iniciar Sesion</button>
-			</article>
-			<aside>
-				<h3 class="display-5 m-auto my-5"> Todavía no tenes cuenta? Regístrate en pocos pasos!</h3>
-				<form class="row g-3 needs-validation mt-5" novalidate>
+
+<div class="formulario__is">
+	<h3 class="formulario__is__titulo"> Inicio de Sesión</h3>
+	<form method="post">
+		<div class="username">
+			<input type="text" required  >
+			<label class="campos"> Nombre de Usuario </label>
+		</div>
+	</form>
+	<form method="post">
+		<div class="contraseña">
+			<input type="password" required >
+			<label class="campos"> Contraseña </label>
+		</div>
+		<input class="formulario__is__boton" type="submit" value="Iniciar Sesion">
+	</form>
+	<div class="creatuser"><a href="#formularioconid"> No tenes cuenta? Registrate en minutos</a></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+				<form class="row g-3 needs-validation mt-5 registrarse" novalidate id="formularioconid">
+					<h3 class="display-5 m-auto my-5 p-5 bienvenidos"> Bienvenido a nuestra comunidad, te damos Una Mano</h3>
 					<div class="col-md-4">
 					  <label for="validationCustom01" class="form-label">Nombre</label>
 					  <input type="text" class="form-control" id="validationCustom01" required>
@@ -108,8 +122,8 @@
 					</div>
 					<div class="col-12">
 					  <div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-						<label class="form-check-label" for="invalidCheck">
+				
+						<label class="form-check-label" for="invalidCheck"><input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
 						  Acepto los terminos y condiciones
 						</label>
 						<div class="invalid-feedback">
@@ -118,7 +132,7 @@
 					  </div>
 					</div>
 					<div class="col-12">
-					  <button class="btn btn-secondary bg-btpropio" type="submit">Registrarse</button>
+					  <button class="btn btn-secondary bg-btpropio mb-3" type="submit">Registrarse</button>
 					</div>
 				  </form>
 			</aside>
